@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="640.0" prefWidth="1200.0" spacing="20.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sio.mavenprojectwebservice.controllers.ListArticleController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Boissons :">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollb" prefHeight="200.0" styleClass="window" stylesheets="@css.css" />
+      <Label text="Pizza :">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollp" layoutX="30.0" layoutY="30.0" prefHeight="200.0" styleClass="window" />
+      <Label text="Desserts :">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrolld" layoutX="30.0" layoutY="30.0" prefHeight="200.0" styleClass="window" />
+      <HBox alignment="CENTER">
+         <children>
+               <Button id="clickonme" mnemonicParsing="false" onAction="#switchToCreation" stylesheets="@css.css" text="ajouter">
+               <font>
+                  <Font name="Impact" size="12.0" />
+               </font>
+                    </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Label text="Menu :">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+         
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button id="clickonme" contentDisplay="CENTER" onAction="#switchToTable" stylesheets="@css.css" text="tables">        
+               <font>
+                  <Font name="Impact" size="12.0" />
+               </font>
+            </Button>
+             <Button id="clickonme" mnemonicParsing="false" onAction="#switchToHistory" stylesheets="@css.css" text="historique">
+               <font>
+                  <Font name="Impact" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>

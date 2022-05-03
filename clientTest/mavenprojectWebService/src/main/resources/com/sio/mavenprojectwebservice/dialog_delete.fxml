@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="boxDialog" alignment="CENTER" prefHeight="111.0" prefWidth="337.0" spacing="20.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sio.mavenprojectwebservice.controllers.DialogDeleteTableController">
+    <children>
+      <Label text="Etes-vous sûr de vouloir supprimer cette Article ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button id="clickonme" onAction="#confirmDeletion" stylesheets="@css.css" text="OK" />
+              <Button id="clickonme" onAction="#closeDialog" stylesheets="@css.css" text="Annuler" />
+         </children>
+      </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

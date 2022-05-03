@@ -1,0 +1,107 @@
+.ulsansstyle{
+	list-style-type: none;
+}
+.awithoutemphasize{
+	text-decoration: none;
+}
+#titlePizzeria{
+	font-family: Arial, Helvetica, sans-serif;
+	background: white;
+	overflow-x : hidden;
+	background-image: url(../images/resto.jpg);
+	text-align: center;
+	height: 310px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#titlePizzeria::after,::before{
+	box-sizing: border-box;
+	margin: 100;
+	padding: 100;
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	transform-style: preserve-3d;
+	display: inline-flex;
+	color: white;
+	font-weight:100;
+	letter-spacing: 20px;
+	cursor: pointer;
+}
+h1 span{
+	pointer-events: none;
+}
+.nomarge{
+	margin-bottom: 0px;
+	background-color: blanchedalmond;
+}
+.separator{
+	padding: 5px;
+}
+#option{
+	padding-top: 10px;
+}
+
+.contenusducommande{	
+	display: grid ;
+	grid-template-columns: repeat(4,1fr) ;
+	grid-template-rows: 100px 1fr 60px ;
+	grid-gap: 10px ;
+}
+#contenucommande{
+	grid-column: 2 ;
+	grid-row: 1 ;
+	border: solid maroon;
+	margin: 20px;
+	background-position: center;
+}
+h4
+{
+	-webkit-text-stroke: 0.6px powderblue;
+	text-align: center;
+	color: dodgerblue;
+	border-radius: 10px;
+}
+h6{
+	color: white;
+}
+.contenusducommande
+{
+	border: 2mm solid maroon;
+	display: flex;
+	background-color:#F01000;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.test{
+	background-image: url(../images/menul.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+}
+button ,input{
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    margin: 2px 1px;
+    cursor: pointer;
+	background-color: cornflowerblue;
+	
+}
+.buttonparticulier{
+	margin-top: 4px;
+}
+label{
+	-webkit-text-stroke: 0.6px powderblue;
+	color: dodgerblue;
+	font-size: 1.2em;
+}
+

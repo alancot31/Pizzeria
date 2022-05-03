@@ -1,0 +1,15 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^Article$   index.php [nc,qsa]
+RewriteRule ^Article/([0-9]+)$   index.php [nc,qsa]
+RewriteRule ^Historique$   index.php [nc,qsa]
+RewriteRule ^Historique/([0-9]+)$   index.php [nc,qsa]
+RewriteRule ^TableRestaurant$   index.php [nc,qsa]
+RewriteRule ^TableRestaurant/([0-9]+)$   index.php [nc,qsa]
+RewriteRule ^Commande$   index.php [nc,qsa]
+RewriteRule ^Commande/([0-9]+)$   index.php [nc,qsa]
+RewriteRule ^Appartient$   index.php [nc,qsa]
+RewriteRule ^Appartient/([0-9]+)$   index.php [nc,qsa]

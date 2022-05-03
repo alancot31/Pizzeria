@@ -1,0 +1,83 @@
+.ulsansstyle{
+	list-style-type: none;
+}
+.awithoutemphasize{
+	text-decoration: none;
+}
+#titlePizzeria{
+	font-family: Arial, Helvetica, sans-serif;
+	background: white;
+	overflow-x : hidden;
+	background-image: url(../images/resto.jpg);
+	text-align: center;
+	height: 310px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#titlePizzeria::after,::before{
+	box-sizing: border-box;
+	margin: 100;
+	padding: 100;
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif;
+	transform-style: preserve-3d;
+	display: inline-flex;
+	color: white;
+	font-weight:100;
+	letter-spacing: 20px;
+	cursor: pointer;
+}
+h1 span{
+	pointer-events: none;
+}
+.nomarge{
+	margin-bottom: 0px;
+	background-color: blanchedalmond;
+}
+.separator{
+	padding: 5px;
+}
+#option{
+	padding-top: 10px;
+}
+
+.contenusducommande{	
+	display: grid ;
+	grid-template-columns: repeat(4,1fr) ;
+	grid-template-rows: 100px 1fr 60px ;
+	grid-gap: 10px ;
+}
+#contenucommande{
+	grid-column: 2 ;
+	grid-row: 1 ;
+	border: solid greenyellow;
+	margin: 20px;
+	background-position: center;
+}
+h4
+{
+	text-align: center;
+	color: oldlace;
+}
+h6{
+	color: white;
+}
+.contenusducommande
+{
+	border: 2mm solid greenyellow;
+	display: flex;
+	background-color:#F39C12;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.test{
+	background-image: url(../images/menul.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+}
